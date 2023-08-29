@@ -4,22 +4,14 @@ import Carousel from 'react-bootstrap/Carousel';
 import storeItems from '../data/items.json';
 import { useShoppingCart } from '../context/ShoppingCartContext';
 
-type StoreItemProps = {
-    productNum: number;
-    name: string;
-    price: number;
-    imgUrl: string;
-    trueOrfalse: boolean,
-};
 
-export function MainPage({ productNum, trueOrfalse }: StoreItemProps) {
+export function MainPage() {
     let check = false;
     const {
         getItemQuantity,
         increaseCartQuantity,
         cartItems,
     } = useShoppingCart();
-    const quantity = getItemQuantity(productNum);
 
     const navigate = useNavigate();
 
