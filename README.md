@@ -1,32 +1,36 @@
-<p align="center">
-  <img width="140px" src="./public/cart.png" />
-</p>
-<h2 align="center">Checkout Cart</h2>
-<p align="center"><b>Ingredients</b></p>
-<p align="middle">
-  <img src="https://img.shields.io/badge/language-ts-blue.svg?style=flat-square"/>
-  <img src="https://img.shields.io/badge/library-react-61dafb.svg?style=flat-square"/>
-  <img src="https://img.shields.io/badge/library-react--router-ff6500.svg?style=flat-square"/>
-  <img src="https://img.shields.io/badge/library-framer--motion-blueviolet.svg?style=flat-square"/>
-  <img src="https://img.shields.io/badge/styled-emotion-ff69b4.svg?style=flat-square"/>
-</p>
+# Shopping Cart
 
-<br />
+[![Shopping Cart](assets/shopping-cart.png)](https://reactts-shopping-cart.netlify.app/)
 
-## 🗺️ Projects!
+[![Store](assets/shopping-cart-store.png)](https://reactts-shopping-cart.netlify.app/)
 
-<p align="center">
-  <img src="./public/demo.jpg"/>
-</p>
-<p align="center">
-  <a href="https://hotaroo-dev.github.io/checkout-cart"> 🖥️ Live Demo</a>
-</p>
+[![Cart](assets/shopping-cart-cart.png)](https://reactts-shopping-cart.netlify.app/)
 
-<br />
+[![About](assets/shopping-cart-about.png)](https://reactts-shopping-cart.netlify.app/)
 
-## 📓 Todo
+A Shopping Cart in React and TypeScript
 
-- [x] single-page application 📜
-- [x] add item to cart ➕
-- [x] delete item ➖
-- [ ] Implement checkout with stripe 💳
+## Technologies
+
+- React
+- TypeScript
+- Bootstrap
+- React Router DOM
+- React Context
+- Vite
+- Local Storage
+- CSS
+- HTML
+
+# Project Setup
+
+```code
+# Clone this repo
+git clone https://github.com/hesbon-osoro/shopping-cart.git
+
+# Navigate to directory and install packages
+cd shopping-cart && yarn
+
+# Start the app
+yarn dev
+```
