@@ -3,7 +3,6 @@ import { useShoppingCart } from '../context/ShoppingCartContext';
 import { formatCurrency } from '../utilities/formatCurrency';
 import { CartItem } from './CartItem';
 import storeItems from '../data/items.json';
-import { Height } from '@material-ui/icons';
 
 type ShoppingCartProps = {
   isOpen: boolean;
@@ -14,18 +13,18 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
       <Offcanvas.Header closeButton>
-        <Offcanvas.Title>Cart</Offcanvas.Title>
+        <Offcanvas.Title>장바구니</Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Stack gap={3}>
           {cartItems.map(item => (
-            <CartItem key={item.id} {...item} />
+            <CartItem key={item.productNum} {...item} />
           ))}
           <div className="ms-auto fw-bold fs-5">
             Total:{' '}
             {formatCurrency(
               cartItems.reduce((total, cartItem) => {
-                const item = storeItems.find(i => i.id === cartItem.id);
+                const item = storeItems.find(i => i.productNum === cartItem.productNum);
                 return total + (item?.price || 0) * cartItem.quantity;
               }, 0)
             )}
@@ -35,6 +34,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
       <Button 
         style={{ display: "flex", height: '50px'}}
         onClick={() => {
+          console.log(cartItems);
           fetch('https://localhost:8080/', {
             method: 'POST',
             headers: {
@@ -47,7 +47,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
               throw new Error('Network response was not ok');
             }
           })
-        }}></Button>
+        }}>주문하기</Button>
     </Offcanvas>
   );
 }

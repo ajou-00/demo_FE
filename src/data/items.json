@@ -1,26 +1,26 @@
 [
   {
-    "id": 1,
-    "name": "Book",
-    "price": 10.99,
+    "productNum": 1,
+    "name": "책",
+    "price": 12900,
     "imgUrl": "book.jpg"
   },
   {
-    "id": 2,
-    "name": "Computer",
-    "price": 1199,
+    "productNum": 2,
+    "name": "컴퓨터",
+    "price": 890000,
     "imgUrl": "computer.jpg"
   },
   {
-    "id": 3,
-    "name": "Banana",
-    "price": 1.05,
+    "productNum": 3,
+    "name": "바나나",
+    "price": 7000,
     "imgUrl": "banana.jpg"
   },
   {
-    "id": 4,
-    "name": "Car",
-    "price": 1400,
+    "productNum": 4,
+    "name": "자동차",
+    "price": 2500000,
     "imgUrl": "car.jpg"
   }
 ]

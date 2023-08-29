@@ -4,13 +4,13 @@ import storeItems from '../data/items.json';
 import { formatCurrency } from '../utilities/formatCurrency';
 
 type CartItemProps = {
-  id: number;
+  productNum: number;
   quantity: number;
 };
 
-export function CartItem({ id, quantity }: CartItemProps) {
+export function CartItem({ productNum, quantity }: CartItemProps) {
   const { removeFromCart } = useShoppingCart();
-  const item = storeItems.find(i => i.id === id);
+  const item = storeItems.find(i => i.productNum === productNum);
   if (item === null) return null;
 
   return (
@@ -37,7 +37,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
       <Button
         variant="outline-danger"
         size="sm"
-        onClick={() => removeFromCart(item?.id || 0)}
+        onClick={() => removeFromCart(item?.productNum || 0)}
       >
         &times;
       </Button>

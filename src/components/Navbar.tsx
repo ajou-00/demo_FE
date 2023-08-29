@@ -14,7 +14,10 @@ export function Navbar() {
       <Container>
         <Nav className="me-auto">
           <Nav.Link to="/store" as={NavLink}>
-            Store
+            
+          </Nav.Link>
+          <Nav.Link to="/store" as={NavLink}>
+            Venture Startup Academy Hackathon - 아주대빵빵이들 팀
           </Nav.Link>
         </Nav>
         {cartQuantity > 0 && (

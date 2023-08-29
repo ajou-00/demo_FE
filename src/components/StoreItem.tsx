@@ -3,20 +3,20 @@ import { useShoppingCart } from '../context/ShoppingCartContext';
 import { formatCurrency } from '../utilities/formatCurrency';
 
 type StoreItemProps = {
-  id: number;
+  productNum: number;
   name: string;
   price: number;
   imgUrl: string;
 };
 
-export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
+export function StoreItem({ productNum, name, price, imgUrl }: StoreItemProps) {
   const {
     getItemQuantity,
     increaseCartQuantity,
     decreaseCartQuantity,
     removeFromCart,
   } = useShoppingCart();
-  const quantity = getItemQuantity(id);
+  const quantity = getItemQuantity(productNum);
 
   return (
     <Card className="h-100">
@@ -33,8 +33,8 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
         </Card.Title>
         <div className="mt-auto">
           {quantity === 0 ? (
-            <Button className="w-100" onClick={() => increaseCartQuantity(id)}>
-              + Add To Cart
+            <Button className="w-100" onClick={() => increaseCartQuantity(productNum)}>
+              장바구니에 추가
             </Button>
           ) : (
             <div
@@ -45,18 +45,18 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
                 className="d-flex align-items-center justify-content-center"
                 style={{ gap: '0.5rem' }}
               >
-                <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
+                <Button onClick={() => decreaseCartQuantity(productNum)}>-</Button>
                 <div>
                   <span className="fs-3"> {quantity}</span>
                 </div>
-                <Button onClick={() => increaseCartQuantity(id)}>+</Button>
+                <Button onClick={() => increaseCartQuantity(productNum)}>+</Button>
               </div>
               <Button
-                onClick={() => removeFromCart(id)}
+                onClick={() => removeFromCart(productNum)}
                 variant="danger"
                 size="sm"
               >
-                Remove
+                장바구니에서 제거
               </Button>
             </div>
           )}
