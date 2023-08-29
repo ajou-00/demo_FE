@@ -3,24 +3,106 @@
     "productNum": 1,
     "name": "책",
     "price": 12900,
-    "imgUrl": "book.jpg"
+    "imgUrl": "book.jpg",
+    "trueOrfalse": true, 
+    "many": true 
   },
   {
     "productNum": 2,
     "name": "컴퓨터",
     "price": 890000,
-    "imgUrl": "computer.jpg"
+    "imgUrl": "computer.jpg",
+    "many": false
   },
   {
     "productNum": 3,
     "name": "바나나",
     "price": 7000,
-    "imgUrl": "banana.jpg"
+    "imgUrl": "banana.jpg",
+    "trueOrfalse": false,
+    "many": true
   },
   {
     "productNum": 4,
     "name": "자동차",
     "price": 2500000,
-    "imgUrl": "car.jpg"
+    "imgUrl": "car.jpg",
+    "many": false
+  },
+  {
+    "productNum": 5,
+    "name": "블루투스 이어폰",
+    "price": 30000,
+    "imgUrl": "shops/shops-1.png",
+    "trueOrfalse": true,
+    "many": true
+  },
+  {
+    "productNum": 6,
+    "name": "핸드폰",
+    "price": 1000000,
+    "imgUrl": "shops/shops-2.png",
+    "trueOrfalse": false,
+    "many": true
+  },
+  {
+    "productNum": 7,
+    "name": "피쳐폰",
+    "price": 100000,
+    "imgUrl": "shops/shops-3.png",
+    "trueOrfalse": false,
+    "many": true
+  },
+  {
+    "productNum": 8,
+    "name": "아이폰",
+    "price": 2000000,
+    "imgUrl": "shops/shops-4.png",
+    "many": false
+  },
+  {
+    "productNum": 9,
+    "name": "블루투스 이어폰",
+    "price": 30000,
+    "imgUrl": "shops/shops-5.png",
+    "trueOrfalse": true,
+    "many": true
+  },
+  {
+    "productNum": 10,
+    "name": "블루투스 이어폰",
+    "price": 30000,
+    "imgUrl": "shops/shops-6.png",
+    "many": false
+  },
+  {
+    "productNum": 11,
+    "name": "핸드폰",
+    "price": 30000,
+    "imgUrl": "shops/shops-7.png",
+    "trueOrfalse": true,
+    "many": true
+  },
+  {
+    "productNum": 12,
+    "name": "블루투스 이어폰",
+    "price": 30000,
+    "imgUrl": "shops/shops-8.png",
+    "trueOrfalse": false,
+    "many": true
+  },
+  {
+    "productNum": 13,
+    "name": "블루투스 이어폰",
+    "price": 30000,
+    "imgUrl": "shops/shops-9.png",
+    "many": false
+  },
+  {
+    "productNum": 14,
+    "name": "모자",
+    "price": 30000,
+    "imgUrl": "shops/shops-10.png",
+    "many": false
   }
 ]
